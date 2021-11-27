@@ -1,0 +1,12 @@
+{
+  "name": "simple-sum",
+  "version": "1.0.0",
+  "description": "## Commands",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Brian Su",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "simple-compression",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev1": "nodemon app_no_compression.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Brian Su",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

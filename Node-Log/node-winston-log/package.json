@@ -1,0 +1,21 @@
+{
+  "name": "winston-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev1": "nodemon app.js",
+    "dev2": "set NODE_ENV=development && nodemon app.js",
+    "dev3": "nodemon -r dotenv/config app.js",
+    "dev": "nodemon -w . -w .env app.js"
+  },
+  "keywords": [],
+  "author": "Brian Su",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "winston": "^3.3.3"
+  }
+}
