@@ -1,0 +1,21 @@
+{
+  "name": "swagger-ui-express-simple",
+  "version": "1.0.0",
+  "description": "## Commands",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Brian Su",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
