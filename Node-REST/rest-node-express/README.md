@@ -4,12 +4,11 @@
 
 ```dos
 npm init -y
-npm i express
-node index.js
-npm i -g nodemon
+npm i -S express
+npm i -D nodemon
 nodemon index.js
 set NODE_EXPRESS_PORT=5000
-npm i joi
+npm i -D joi
 ```
 
 ## Screenshot
