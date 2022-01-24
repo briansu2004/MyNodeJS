@@ -1,0 +1,17 @@
+{
+  "name": "lodash-groupby",
+  "version": "1.0.0",
+  "description": "## Commands",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Brian Su",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.15"
+  }
+}

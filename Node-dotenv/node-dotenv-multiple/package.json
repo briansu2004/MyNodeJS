@@ -1,0 +1,28 @@
+{
+  "name": "dotenv-multiple",
+  "version": "1.0.0",
+  "description": "## Commands",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon server.js",
+    "prod": "set NODE_ENV=production&& nodemon server.js",
+    "production": "set NODE_ENV=production&&nodemon server.js",
+    "prodcross": "cross-env NODE_ENV=production nodemon server.js",
+    "notwork1": "set NODE_ENV=production && nodemon server.js",
+    "notwork2": "nodemon server.js NODE_ENV=production",
+    "notwork3": "NODE_ENV=production nodemon server.js",
+    "notwork4": "set NODE_ENV=production & nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Brian Su",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
