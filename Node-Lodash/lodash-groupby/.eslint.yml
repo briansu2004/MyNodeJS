@@ -1,0 +1,9 @@
+extends:
+  - eslint:recommend
+  - plugin:prettier/recommend
+env:
+  node: true
+plugins:
+  - prettier
+rules:
+  prettier/prettier: error

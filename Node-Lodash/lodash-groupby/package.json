@@ -5,13 +5,20 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon tag.js"
+    "dev": "nodemon tag.js",
+    "lint": "eslint \"./**/*.{js,jsx}\"",
+    "lint1": "eslint \"tag.js\"",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\""
   },
   "keywords": [],
   "author": "Brian Su",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0"
   }
 }

@@ -34,12 +34,6 @@ tagData.map((t) => {
     tagGrouped
       .filter((e) => e.key === prefix + t.tagGroupReference)
       .forEach((e) => (e.value = e.value.concat(t.name)));
-
-    // tagGrouped
-    //   .filter((e) => e.key === prefix + t.tagGroupReference)
-    //   .forEach((k, v) => {
-    //     k, v.concat(t.name);
-    //   });
   } else {
     tagGrouped.push({ key: prefix + t.tagGroupReference, value: [t.name] });
   }
