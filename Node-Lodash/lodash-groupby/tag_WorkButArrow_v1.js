@@ -27,18 +27,19 @@ const { tagData } = require('./mock/tagData');
 const prefix = 'UCARModelToTag:';
 const tagGrouped = [];
 
-tagData.forEach((t) => {
-  if (tagGrouped.find((e) => e.key === prefix + t.tagGroupReference) === undefined) {
-    tagGrouped.push({ key: prefix + t.tagGroupReference, value: [t.name] });
+tagData.map((t) => {
+  const tf = tagGrouped.filter((e) => e.key === prefix + t.tagGroupReference);
+
+  if (tf.length > 0) {
+    tagGrouped
+      .filter((e) => e.key === prefix + t.tagGroupReference)
+      .forEach((e) => (e.value = e.value.concat(t.name)));
   } else {
-    tagGrouped[tagGrouped.findIndex((e) => e.key === prefix + t.tagGroupReference)].value = tagGrouped[
-      tagGrouped.findIndex((e) => e.key === prefix + t.tagGroupReference)
-    ].value.concat(t.name);
+    tagGrouped.push({ key: prefix + t.tagGroupReference, value: [t.name] });
   }
 });
 
-/*
-tagGrouped.forEach((t) => {
+console.log('tagGrouped: ');
+tagGrouped.map((t) => {
   console.log(t);
 });
-*/
