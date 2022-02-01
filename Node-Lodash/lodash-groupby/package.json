@@ -2,12 +2,12 @@
   "name": "lodash-groupby",
   "version": "1.0.0",
   "description": "## Commands",
-  "main": "tagGroup.js",
+  "main": "tagRef.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon tagGroup.js",
+    "dev": "nodemon tagRef.js",
     "lint1": "eslint \"./**/*.{js,jsx}\"",
-    "lint": "eslint \"tagGroup.js\"",
+    "lint": "eslint \"tagRef.js\"",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\""
   },
   "keywords": [],
