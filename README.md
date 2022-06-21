@@ -13,3 +13,6 @@
 ![](image/README/promise_05.png)
 
 ![](image/README/promise_06.png)
+
+## Using SinonJS to mock Node apps
+
